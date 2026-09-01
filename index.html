@@ -14,9 +14,32 @@ section{padding:95px 0}.head{max-width:720px;margin-bottom:35px}.title{font:44px
 .contact{text-align:center;padding:55px 25px;border:1px solid #ffffff18;border-radius:22px;background:#ffffff04}footer{border-top:1px solid #ffffff15;padding:28px 0;color:#8f9a95;font-size:12px}.foot{display:flex;justify-content:space-between}
 @media(max-width:800px){.links{display:none}.hero-grid{grid-template-columns:1fr}.profile{order:-1}.grid{grid-template-columns:1fr}.title{font-size:37px}.feature{display:block}.foot{flex-direction:column;gap:8px}}
 </style>
+
+<style>
+#trends{position:relative}
+.trend-intro{max-width:780px;color:#b9c0bd;font-size:17px;line-height:1.7;margin:0 0 28px}
+.trend-note{font-size:13px;color:#8f9894;margin-top:18px}
+.trend-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.trend-card{background:linear-gradient(145deg,#0d1715,#101d1a);border:1px solid #26322e;border-radius:18px;padding:20px;transition:.2s}
+.trend-card:hover{transform:translateY(-3px);border-color:#e2bd70}
+.trend-card .tag{display:inline-block;border:1px solid #5c5135;color:#e2bd70;border-radius:999px;padding:5px 9px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:12px}
+.trend-card h3{margin:0 0 8px;font-size:20px}
+.trend-card p{margin:0;color:#aeb7b3;line-height:1.6;font-size:14px}
+.score{margin-top:14px;font-size:12px;color:#e2bd70;font-weight:700}
+.event-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:26px}
+.event{display:flex;justify-content:space-between;gap:18px;padding:16px 18px;background:#0b1211;border:1px solid #202a27;border-radius:14px}
+.event strong{display:block}
+.event span{display:block;color:#929b97;font-size:12px;margin-top:5px}
+.event .op{color:#e2bd70;text-align:right;font-size:13px;font-weight:700;white-space:nowrap}
+.trend-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.trend-btn{display:inline-flex;align-items:center;gap:8px;padding:12px 16px;border-radius:10px;border:1px solid #33403b;color:#fff;text-decoration:none;font-weight:700;font-size:13px}
+.trend-btn.primary{background:#e2bd70;color:#111;border-color:#e2bd70}
+@media(max-width:900px){.trend-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.trend-grid,.event-list{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
-<nav><div class="wrap nav"><a class="logo" href="#home">IMRAN<span>.</span></a><div class="links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#audi">Audi Hub</a><a href="#contact">Contact</a></div></div></nav>
+<nav><div class="wrap nav"><a class="logo" href="#home">IMRAN<span>.</span></a><div class="links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#trends">US Trends</a><a href="#audi">Audi Hub</a><a href="#contact">Contact</a></div></div></nav>
 
 <header class="hero" id="home"><div class="wrap hero-grid">
 <div><div class="eyebrow">Personal Portfolio</div><h1>Imran <span class="gold">Miah</span></h1>
@@ -39,6 +62,64 @@ section{padding:95px 0}.head{max-width:720px;margin-bottom:35px}.title{font:44px
 <div class="card"><div class="num">PROJECT 02</div><h3>Creative Work</h3><p>A growing space for digital projects, ideas and future collaborations.</p></div>
 <div class="card"><div class="num">PROJECT 03</div><h3>Launch Planning</h3><p>Structured ecommerce and product-launch planning resources.</p></div>
 </div></div></section>
+
+
+
+<section id="trends" class="section">
+  <div class="container">
+    <div class="eyebrow">USA EVENTS + DESIGN RADAR</div>
+    <h2>U.S. Events & What to Design</h2>
+    <p class="trend-intro">
+      A practical 2026 event calendar for planning print-on-demand designs in the U.S.
+      Each event includes niche ideas and a suggested design direction. These are
+      opportunities to test—not guarantees of sales.
+    </p>
+
+    <div class="event-list">
+      <div class="event"><div><strong>Labor Day</strong><span>September 7, 2026</span></div><div class="op">Work • USA • Family<br>Patriotic / Weekend Humor</div></div>
+      <div class="event"><div><strong>Patriot Day</strong><span>September 11, 2026</span></div><div class="op">Remembrance • Service<br>Respectful original designs</div></div>
+      <div class="event"><div><strong>National Grandparents Day</strong><span>September 13, 2026</span></div><div class="op">Grandparents • Family<br>Personalized Gifts</div></div>
+      <div class="event"><div><strong>Hispanic Heritage Month</strong><span>September 15 – October 15, 2026</span></div><div class="op">Culture • Family<br>Original heritage-inspired art</div></div>
+      <div class="event"><div><strong>National Public Lands Day</strong><span>September 26, 2026</span></div><div class="op">Camping • Hiking • Outdoors<br>Adventure Designs</div></div>
+      <div class="event"><div><strong>World Teachers' Day</strong><span>October 5, 2026</span></div><div class="op">Teachers • School<br>Teacher Humor / Gifts</div></div>
+      <div class="event"><div><strong>World Mental Health Day</strong><span>October 10, 2026</span></div><div class="op">Wellness • Awareness<br>Positive / Supportive Art</div></div>
+      <div class="event"><div><strong>Boss's Day</strong><span>October 16, 2026</span></div><div class="op">Coworkers • Office<br>Funny Gift Designs</div></div>
+      <div class="event"><div><strong>Halloween</strong><span>October 31, 2026</span></div><div class="op">Pets • Families • Kids<br>Spooky / Cute / Gothic</div></div>
+      <div class="event"><div><strong>Native American Heritage Month</strong><span>November 1–30, 2026</span></div><div class="op">Heritage • Culture<br>Respectful Original Art</div></div>
+      <div class="event"><div><strong>Election Day</strong><span>November 3, 2026</span></div><div class="op">Civic • USA<br>Non-partisan Original Designs</div></div>
+      <div class="event"><div><strong>Diwali / Deepavali</strong><span>November 8, 2026</span></div><div class="op">Culture • Family • Gifts<br>Respectful Original Art</div></div>
+      <div class="event"><div><strong>Veterans Day</strong><span>November 11, 2026</span></div><div class="op">Veterans • Military Families<br>Appreciation Designs</div></div>
+      <div class="event"><div><strong>Thanksgiving</strong><span>November 26, 2026</span></div><div class="op">Family • Food • Gratitude<br>Matching / Personalized</div></div>
+      <div class="event"><div><strong>Black Friday</strong><span>November 27, 2026</span></div><div class="op">Shopping • Gifts<br>Deal / Gift Humor</div></div>
+      <div class="event"><div><strong>Cyber Monday</strong><span>November 30, 2026</span></div><div class="op">Online Shopping • Gifts<br>Digital / Shopping Humor</div></div>
+      <div class="event"><div><strong>GivingTuesday</strong><span>December 1, 2026</span></div><div class="op">Charity • Community<br>Positive Giving Themes</div></div>
+      <div class="event"><div><strong>Christmas / Holiday Gifts</strong><span>December 24–25, 2026</span></div><div class="op">Family • Couples • Pets<br>Personalized Gifts</div></div>
+      <div class="event"><div><strong>Kwanzaa</strong><span>December 26, 2026</span></div><div class="op">Culture • Family<br>Respectful Original Art</div></div>
+      <div class="event"><div><strong>New Year's Eve</strong><span>December 31, 2026</span></div><div class="op">Celebration • Party<br>2027 / New Beginnings</div></div>
+    </div>
+
+    <h3 style="margin-top:42px">Niches Worth Testing</h3>
+    <div class="trend-grid">
+      <article class="trend-card"><span class="tag">Seasonal</span><h3>Halloween</h3><p>Original spooky humor, cute ghosts, pumpkins, pets, family matching, gothic aesthetics.</p><div class="score">START EARLY: SEP → OCT</div></article>
+      <article class="trend-card"><span class="tag">Giftable</span><h3>Family + Personalization</h3><p>Names, roles, grandparents, parents, couples, family reunions and personalized gift concepts.</p><div class="score">TEST: OCT → DEC</div></article>
+      <article class="trend-card"><span class="tag">Niche</span><h3>Pet Owners</h3><p>Breed-neutral pet humor, rescue themes, pet names, dog moms/dads and holiday pet gifts.</p><div class="score">EVERGREEN</div></article>
+      <article class="trend-card"><span class="tag">Niche</span><h3>Teachers + School</h3><p>Teacher humor, classroom life, appreciation gifts and subject-specific original phrases.</p><div class="score">SEASONAL BOOST</div></article>
+      <article class="trend-card"><span class="tag">Niche</span><h3>First Responders</h3><p>Firefighters, EMTs, dispatchers and service-family appreciation designs with original wording.</p><div class="score">EVERGREEN</div></article>
+      <article class="trend-card"><span class="tag">Style</span><h3>Gothic / Retro</h3><p>Dark romantic, vintage-inspired typography, bold retro layouts and original decorative artwork.</p><div class="score">FALL + EVERGREEN</div></article>
+    </div>
+
+    <div class="trend-actions">
+      <a class="trend-btn primary" href="https://trends.google.com/trending?geo=US&hl=en-US" target="_blank" rel="noopener">Live U.S. Google Trends ↗</a>
+      <a class="trend-btn" href="https://www.timeanddate.com/holidays/us/2026" target="_blank" rel="noopener">U.S. 2026 Calendar ↗</a>
+    </div>
+
+    <p class="trend-note">
+      Planning rule: begin testing seasonal designs roughly 4–8 weeks before the event.
+      Avoid celebrity names, sports-team logos, brand logos, copyrighted characters and other protected IP unless authorized.
+    </p>
+  </div>
+</section>
+
 
 <section id="audi"><div class="wrap"><div class="head"><div class="eyebrow">Featured Project</div><h2 class="title">Audi USA Product Launch Hub.</h2><p class="muted">Open the dedicated launch and store-planning hub from inside my portfolio.</p></div>
 <div class="feature"><div><div class="num">ECOMMERCE / PRODUCT LAUNCH</div><h3>Product Launch & Store Hub</h3><p>Product launch planning, storefront setup, GearLaunch workflow, multi-platform marketing, store checklist and optimization resources.</p></div><a class="btn primary" href="audi-launch-hub/index.html">Open Audi Hub ↗</a></div></div></section>
