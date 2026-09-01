@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Audi USA product launch, ecommerce and GearLaunch planning hub">
+<title>Audi USA — Product Launch & Store Hub</title>
+<style>
+:root{--bg:#050608;--panel:#0d1014;--panel2:#12161b;--text:#f6f7f9;--muted:#9da5af;--red:#e51b23;--silver:#c8d0d8;--line:#ffffff14;--max:1220px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0,#e51b2314,transparent 28%),linear-gradient(135deg,#050608,#0a0d11 55%,#050608);color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.55}
+a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),92%);margin:auto}
+nav{position:fixed;z-index:30;top:0;left:0;right:0;background:#050608e8;backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:19px;font-weight:800;letter-spacing:1px}.brand span{color:var(--red)}.links{display:flex;gap:24px;color:var(--muted);font-size:13px}.links a:hover{color:#fff}
+.hero{min-height:88vh;padding:125px 0 80px;display:flex;align-items:center}.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}.eyebrow{font-size:11px;letter-spacing:2.5px;color:var(--silver);text-transform:uppercase;font-weight:800}.eyebrow i{color:var(--red);font-style:normal}
+h1{font-size:clamp(48px,7vw,88px);line-height:.95;letter-spacing:-4px;margin:18px 0}.red{color:var(--red)}.lead{font-size:19px;color:var(--muted);max-width:700px}.actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:30px}.btn{padding:13px 18px;border:1px solid var(--line);border-radius:9px;font-weight:700;font-size:13px;transition:.2s}.btn:hover{transform:translateY(-2px);border-color:#ffffff35}.primary{background:var(--red);border-color:var(--red)}
+.dashboard{background:linear-gradient(145deg,#11161c,#0a0d11);border:1px solid var(--line);border-radius:24px;padding:23px;box-shadow:0 35px 100px #0008}.dash-top{display:flex;justify-content:space-between;color:var(--muted);font-size:12px}.traffic{height:160px;margin-top:20px;border:1px solid var(--line);border-radius:15px;padding:20px;position:relative;overflow:hidden;background:linear-gradient(180deg,#ffffff03,#ffffff00)}.line{position:absolute;left:15px;right:15px;bottom:35px;height:70px;border-top:2px solid var(--red);transform:skewY(-10deg)}.dash-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:10px}.mini{padding:14px;background:#ffffff05;border:1px solid var(--line);border-radius:12px}.mini b{font-size:20px}.mini small{display:block;color:var(--muted);font-size:10px;margin-top:3px}
+section{padding:95px 0}.head{max-width:760px;margin-bottom:38px}.title{font-size:43px;letter-spacing:-1.8px;margin:9px 0}.sub{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{padding:25px;border-radius:17px;background:linear-gradient(145deg,var(--panel2),var(--panel));border:1px solid var(--line);transition:.25s}.card:hover{transform:translateY(-5px);border-color:#e51b2345}.num{color:var(--red);font-weight:800;font-size:11px;letter-spacing:1px}.card h3{margin:12px 0 6px}.card p{color:var(--muted);font-size:14px;margin:0}
+.platforms{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.platform{padding:22px;border:1px solid var(--line);border-radius:15px;background:#ffffff04}.platform strong{font-size:17px}.tag{float:right;border:1px solid var(--line);border-radius:99px;padding:3px 8px;font-size:10px;color:var(--muted)}.platform p{color:var(--muted);font-size:13px;margin:9px 0 0}
+.steps{counter-reset:s}.step{display:grid;grid-template-columns:60px 1fr;gap:18px;padding:22px 0;border-bottom:1px solid var(--line)}.step:before{counter-increment:s;content:counter(s);width:45px;height:45px;display:grid;place-items:center;border:1px solid #e51b2350;border-radius:50%;color:var(--red);font-weight:800}.step h3{margin:0 0 5px}.step p{color:var(--muted);margin:0;font-size:14px}
+.checklist{display:grid;grid-template-columns:1fr 1fr;gap:12px}.check{padding:16px;border:1px solid var(--line);border-radius:12px;background:#ffffff04}.check b{color:#fff}.check span{color:var(--muted);font-size:13px;display:block;margin-top:4px}
+.notice{padding:20px;border:1px solid #e51b2340;border-radius:15px;background:#e51b2308;color:var(--muted);font-size:13px}.notice strong{color:#fff}
+.cta{padding:55px;text-align:center;border:1px solid var(--line);border-radius:24px;background:linear-gradient(135deg,#15191e,#0b0d10)}
+footer{padding:30px 0;border-top:1px solid var(--line);color:var(--muted);font-size:12px}.foot{display:flex;justify-content:space-between}
+.reveal{opacity:0;transform:translateY(15px);transition:.6s}.reveal.show{opacity:1;transform:none}
+@media(max-width:850px){.links{display:none}.hero-grid{grid-template-columns:1fr}.dashboard{order:-1}.cards,.platforms,.checklist{grid-template-columns:1fr}.title{font-size:36px}.hero{min-height:auto}.foot{flex-direction:column;gap:8px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap nav"><a class="brand" href="#home">AUDI <span>USA</span></a><div class="links"><a href="#launch">Launch</a><a href="#platforms">Platforms</a><a href="#gearlaunch">GearLaunch</a><a href="#store">Store</a><a href="#legal">Legal</a></div></div></nav>
+
+<header class="hero" id="home"><div class="wrap hero-grid">
+<div class="reveal"><div class="eyebrow"><i>●</i> Ecommerce launch hub</div>
+<h1>Build. Launch.<br><span class="red">Scale.</span></h1>
+<p class="lead">A practical planning dashboard for product launches, storefront setup, print-on-demand workflows, multi-platform marketing, and post-launch optimization.</p>
+<div class="actions"><a class="btn primary" href="#launch">View Launch Plan ↓</a><a class="btn" href="#gearlaunch">GearLaunch Guide</a></div></div>
+<div class="dashboard reveal"><div class="dash-top"><span>LAUNCH CONTROL</span><span>READY TO PLAN</span></div><div class="traffic"><div class="line"></div><div style="position:absolute;top:16px;color:#9da5af;font-size:11px">Traffic → Conversion → Repeat Buyers</div></div><div class="dash-grid"><div class="mini"><b>01</b><small>Research</small></div><div class="mini"><b>02</b><small>Launch</small></div><div class="mini"><b>03</b><small>Scale</small></div></div></div>
+</div></header>
+
+<section id="launch"><div class="wrap"><div class="head reveal"><div class="eyebrow">01 — Launch System</div><h2 class="title">Product launch, end to end.</h2><p class="sub">Use this sequence for a new product, collection, accessory, apparel drop, or print-on-demand campaign.</p></div>
+<div class="steps">
+<div class="step reveal"><div><h3>Research the market</h3><p>Define the buyer, use case, price range, competing products, search intent, and the reason your product should exist.</p></div></div>
+<div class="step reveal"><div><h3>Build the offer</h3><p>Create the product name, value proposition, variants, pricing, margin target, mockups, product photos, description, FAQs, shipping and returns information.</p></div></div>
+<div class="step reveal"><div><h3>Prepare the store</h3><p>Connect your domain, configure navigation, collections, checkout, payment methods, analytics, support email, policies, mobile layout, and tracking.</p></div></div>
+<div class="step reveal"><div><h3>Soft launch first</h3><p>Send a small audience to the product, test checkout, watch conversion and customer questions, then fix friction before scaling paid traffic.</p></div></div>
+<div class="step reveal"><div><h3>Scale what works</h3><p>Increase creative testing, retarget engaged visitors, build bundles and upsells, expand winning products, and review profit—not just revenue.</p></div></div>
+</div></div></section>
+
+<section id="platforms"><div class="wrap"><div class="head reveal"><div class="eyebrow">02 — All-Platform Playbook</div><h2 class="title">One product. Multiple channels.</h2><p class="sub">Use each channel for the job it does best, while keeping your product data, pricing logic, brand assets, and customer experience consistent.</p></div>
+<div class="platforms">
+<div class="platform reveal"><span class="tag">STORE</span><strong>Shopify</strong><p>Best for owning the storefront, checkout experience, customer journey, analytics, and brand identity.</p></div>
+<div class="platform reveal"><span class="tag">STORE</span><strong>WooCommerce</strong><p>Useful when you want WordPress flexibility and deeper control over your site and content.</p></div>
+<div class="platform reveal"><span class="tag">MARKETPLACE</span><strong>Etsy</strong><p>Strong for design-led, personalized and giftable products where marketplace discovery matters.</p></div>
+<div class="platform reveal"><span class="tag">MARKETPLACE</span><strong>Amazon</strong><p>Use for high-intent marketplace demand, but keep listings, brand rules, margins and inventory carefully managed.</p></div>
+<div class="platform reveal"><span class="tag">SOCIAL</span><strong>Facebook + Instagram</strong><p>Use Reels, product storytelling, creator content, retargeting and community engagement to drive qualified traffic.</p></div>
+<div class="platform reveal"><span class="tag">SOCIAL</span><strong>TikTok</strong><p>Test short-form hooks, product demos, before/after concepts, creator-style videos and trend-aware creative.</p></div>
+<div class="platform reveal"><span class="tag">SOCIAL</span><strong>YouTube</strong><p>Build longer-form reviews, how-to content, comparisons and evergreen search traffic around the product.</p></div>
+<div class="platform reveal"><span class="tag">POD</span><strong>GearLaunch</strong><p>Useful for print-on-demand workflows where designs are applied to products and fulfillment is handled by the platform.</p></div>
+</div></div></section>
+
+<section id="gearlaunch"><div class="wrap"><div class="head reveal"><div class="eyebrow">03 — GearLaunch</div><h2 class="title">GearLaunch setup workflow.</h2><p class="sub">A practical checklist based on GearLaunch's current setup guidance.</p></div>
+<div class="cards">
+<div class="card reveal"><div class="num">STEP 01</div><h3>Domain + email</h3><p>Buy a professional domain, connect the DNS as instructed, and set up customer-support email forwarding.</p></div>
+<div class="card reveal"><div class="num">STEP 02</div><h3>Create the store</h3><p>Create your GearLaunch account/store, submit the store for review, and complete the launch checklist.</p></div>
+<div class="card reveal"><div class="num">STEP 03</div><h3>Design products</h3><p>Use print-ready artwork, strong contrast, readable typography, correct dimensions, and product-specific mockups.</p></div>
+<div class="card reveal"><div class="num">STEP 04</div><h3>Build storefronts</h3><p>Organize products into clear collections/storefronts so customers can browse by theme, audience, product or campaign.</p></div>
+<div class="card reveal"><div class="num">STEP 05</div><h3>Pricing + upsells</h3><p>Calculate base cost, shipping, platform fees, ad spend allowance and target profit before setting the retail price.</p></div>
+<div class="card reveal"><div class="num">STEP 06</div><h3>Test before ads</h3><p>Place a test order, verify checkout and notifications, inspect the product quality, then start promotion.</p></div>
+</div>
+<div class="actions" style="margin-top:25px"><a class="btn primary" href="https://www.gearlaunch.com/" target="_blank">Open GearLaunch ↗</a><a class="btn" href="https://www.gearlaunch.com/academy/quick-start-guide" target="_blank">Quick Start Guide ↗</a></div>
+</div></section>
+
+<section id="store"><div class="wrap"><div class="head reveal"><div class="eyebrow">04 — Store Setup</div><h2 class="title">Launch-ready store checklist.</h2></div>
+<div class="checklist">
+<div class="check reveal"><b>Brand system</b><span>Logo, colors, typography, tone, favicon and consistent product imagery.</span></div>
+<div class="check reveal"><b>Homepage</b><span>Clear value proposition, featured products, social proof, collections and strong CTA.</span></div>
+<div class="check reveal"><b>Product pages</b><span>Great title, benefits, specs, sizing, photos, FAQs, shipping and return information.</span></div>
+<div class="check reveal"><b>Navigation</b><span>Simple menus, collections, search, filters and a visible cart.</span></div>
+<div class="check reveal"><b>Checkout</b><span>Test payment, shipping, taxes, confirmation email and mobile checkout.</span></div>
+<div class="check reveal"><b>Analytics</b><span>Track sessions, add-to-cart, checkout, purchase, conversion rate and revenue.</span></div>
+<div class="check reveal"><b>Marketing</b><span>Prepare launch creatives, organic posts, creator outreach, email/SMS and retargeting.</span></div>
+<div class="check reveal"><b>Customer care</b><span>Publish support contact, response expectations, shipping/return policies and FAQs.</span></div>
+</div></div></section>
+
+<section><div class="wrap"><div class="head reveal"><div class="eyebrow">05 — Launch Tips</div><h2 class="title">Small changes, better launches.</h2></div>
+<div class="cards">
+<div class="card reveal"><h3>Start with one hero product</h3><p>Make the first launch easy to understand. Expand after you see real demand.</p></div>
+<div class="card reveal"><h3>Make creative before launch</h3><p>Prepare multiple hooks, thumbnails, short videos, product shots and testimonials before traffic starts.</p></div>
+<div class="card reveal"><h3>Measure profit, not likes</h3><p>Track contribution margin after product, shipping, platform and advertising costs.</p></div>
+<div class="card reveal"><h3>Build bundles</h3><p>Pair complementary products to increase average order value without relying only on new customers.</p></div>
+<div class="card reveal"><h3>Retarget visitors</h3><p>Use compliant remarketing to reconnect with people who viewed products or started checkout.</p></div>
+<div class="card reveal"><h3>Keep testing</h3><p>Change one major variable at a time: offer, creative, audience, landing page or price.</p></div>
+</div></div></section>
+
+<section id="legal"><div class="wrap"><div class="head reveal"><div class="eyebrow">06 — Legal & Brand Safety</div><h2 class="title">Protect the brand before you sell.</h2></div>
+<div class="notice reveal"><strong>Important:</strong> This is an independent planning/demo website, not an official Audi USA website. Audi names, logos, vehicle names, trade dress and other marks may be protected. Do not sell products using Audi trademarks, logos, copyrighted imagery, or other protected brand assets unless you have the appropriate authorization or license. For a real store, verify trademark, copyright, advertising, platform and consumer-law requirements before launch.</div>
+<div class="actions"><a class="btn" href="https://www.audiusa.com/en/" target="_blank">Audi USA Official Site ↗</a><a class="btn" href="https://www.audiusa.com/en/models/" target="_blank">Audi Models ↗</a><a class="btn" href="https://www.audiusa.com/en/shopping-tools/accessories/" target="_blank">Audi Accessories ↗</a></div>
+</div></section>
+
+<section><div class="wrap"><div class="cta reveal"><div class="eyebrow">Launch Dashboard</div><h2 class="title">Research → Build → Test → Launch → Scale.</h2><p class="sub">Use this page as your operating checklist and replace the placeholder product information with your own authorized products and brand assets.</p><div class="actions" style="justify-content:center"><a class="btn primary" href="#home">Back to top ↑</a></div></div></div></section>
+
+<footer><div class="wrap foot"><span>© <span id="year"></span> Product Launch Hub — Independent demo</span><span>Not affiliated with Audi AG or Audi USA.</span></div></footer>
+<script>
+const o=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add("show")}),{threshold:.08});
+document.querySelectorAll(".reveal").forEach(e=>o.observe(e));
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body></html>
